@@ -266,13 +266,13 @@ footer p a:link, footer li a{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    flex-basis: 300px; /* Sets the minimum width of each child */
-    flex-grow: 1; /* Allows items to grow to fill available space */
+    flex-basis: 300px;
+    flex-grow: 1;
     max-width: 100%;
     column-gap: 100px;
     row-gap: 50px;
     margin: 100px;
+    justify-content: center;
 }
 
 /*about me preview*/
