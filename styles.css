@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'crimson-pro';
+    src: url('fonts/crimsonpro.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'karla';
+    src: url('fonts/karla.ttf') format('truetype');
+}
+
+:root {
+    --tan1: #F2F1EE;
+    --red1: #290000;
+    --red2: #660707;
+    --red3: #A20E0E;
+    --red4: #EBD4D2;
+}
+
+*{box-sizing: border-box;}
+
+html, body{
+    background-color: var(--tan1);
+    color: var(--red1);
+    margin: 0;
+    height: 100%;
+    text-wrap: pretty;
+}
+
+/*header*/
+header {
+    background-color: var(--red3);
+    color: var(--tan1);
+    width: 100%;
+    box-shadow: 0px 6px 6px rgb(0, 0, 0, 0.2);
+}
+
+header a{
+    color: var(--tan1);
+    text-decoration: none;
+}
+
+/*nav bar*/
+    /*overall*/
+    .menu {
+        vertical-align: center;
+        text-align: center;
+        font-family: 'podkova';
+        font-size: 1.3rem;
+        }
+    
+        /*header box*/
+        .top-nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #F2E7D4;
+        height: 85px;
+        padding: 1em;
+        }
+    
+        .top-nav img {
+        max-height: 50px;
+        }
+    
+        /*hamburger icon*/
+        .menu {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        }
+        
+        .menu > li {
+        margin: 0 1rem;
+        overflow: hidden;
+        }
+        
+        .menu-button-container {
+        display: none;
+        height: 100%;
+        width: 50px;
+        cursor: pointer;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
+        
+        #menu-toggle {
+        display: none;
+        }
+        
+        .menu-button,
+        .menu-button::before,
+        .menu-button::after {
+        display: block;
+        background-color: #3D251E;
+        position: absolute;
+        height: 8px;
+        width: 55px;
+        transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+        border-radius: 10px;
+        }
+        
+        .menu-button::before {
+        content: '';
+        margin-top: -18px;
+        }
+        
+        .menu-button::after {
+        content: '';
+        margin-top: 18px;
+        }
+        
+        #menu-toggle:checked + .menu-button-container .menu-button::before {
+        margin-top: 0px;
+        transform: rotate(405deg);
+        }
+        
+        #menu-toggle:checked + .menu-button-container .menu-button {
+        background: rgba(255, 255, 255, 0);
+        }
+        
+        #menu-toggle:checked + .menu-button-container .menu-button::after {
+        margin-top: 0px;
+        transform: rotate(-405deg);
+        }
