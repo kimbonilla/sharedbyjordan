@@ -77,7 +77,7 @@ header a{
         
         .menu > li {
         margin: 0 50px;
-        overflow: hidden;
+        overflow: visible;
         }
         
         .menu-button-container {
@@ -151,6 +151,10 @@ header a{
             width: 100%;
             justify-content: center;
             align-items: center;
+        }
+
+        .menu > li {
+            overflow: hidden;
         }
         
         #menu-toggle ~ .menu li {
@@ -255,12 +259,19 @@ footer p a:link, footer li a{
     display: block;
     margin: 50px auto;
     max-height: 25vh;
+    max-width: 90vw;
 }
 
 .home-text {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
+    flex-basis: 300px; /* Sets the minimum width of each child */
+    flex-grow: 1; /* Allows items to grow to fill available space */
+    max-width: 100%;
+    column-gap: 100px;
+    row-gap: 50px;
     margin: 100px;
 }
 
@@ -278,14 +289,29 @@ footer p a:link, footer li a{
     margin: 0px;
 }
 
-
 /*socials*/
+.socials {
+    display: block;
+}
+
+
+.socials a {
+    text-decoration: none;
+    margin: none;
+}
+
+.socials img {
+    height: 50px;
+    margin-right: 25px;
+    align-self: center;
+}
+
 .instagram{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     width: 40vw;
     max-width: 900px;
+    margin-bottom: 25px;
     padding: 50px;
     background-color: var(--red2);
     color: var(--tan1);
@@ -295,15 +321,11 @@ footer p a:link, footer li a{
 .linkedin{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     width: 40vw;
     max-width: 900px;
+    margin-top: 25px;
     padding: 50px;
     background-color: var(--red2);
     color: var(--tan1);
     box-shadow: 0px 4px 4px rgb(0, 0, 0, 0.2);
-}
-
-.socials img {
-    height: 100px;
 }
