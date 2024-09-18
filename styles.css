@@ -26,6 +26,10 @@ html, body{
     text-wrap: pretty;
 }
 
+p, a {
+    font-size: 20px;
+}
+
 /*header*/
 header {
     background-color: var(--red3);
@@ -127,7 +131,7 @@ header a{
         transform: rotate(-405deg);
         }
         
-            /*pop-up menu*/
+    /*pop-up menu*/
     @media (max-width: 699px) {
 
         .top-nav {
@@ -179,3 +183,69 @@ header a{
             display:block;
         }
         }
+
+/*headers*/
+h1, h2, h3, h4, h5, h6{
+    font-family: 'crimson-sans', serif;
+}
+
+/*main text*/
+p, ul {
+    font-family: 'karla', sans-serif;
+    font-weight: 275;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+/*footer*/
+footer {
+    width: 100%;
+    padding: 25px 100px;
+    text-align: center;
+    background-color: var(--red3);
+    color: var(--tan1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*mail*/
+.mail {
+    max-width: 250px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mail img {
+    height: 20px;
+    margin-right: 10px;
+}
+
+
+/*logo*/
+footer img {
+    max-height: 50px;
+    align-self: center;
+}
+
+
+/*footer menu*/
+.footer-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer p a:link, footer li a{
+    color: var(--tan1);
+    text-decoration: none;
+}
