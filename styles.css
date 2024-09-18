@@ -44,8 +44,8 @@ header a{
     .menu {
         vertical-align: center;
         text-align: center;
-        font-family: 'podkova';
-        font-size: 1.3rem;
+        font-family: 'crimson-pro';
+        font-size: 1.5rem;
         }
     
         /*header box*/
@@ -54,9 +54,9 @@ header a{
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        background-color: #F2E7D4;
+        background-color: var(--red3);
         height: 85px;
-        padding: 1em;
+        padding: 0px 100px;
         }
     
         .top-nav img {
@@ -95,7 +95,7 @@ header a{
         .menu-button::before,
         .menu-button::after {
         display: block;
-        background-color: #3D251E;
+        background-color: var(--tan1);
         position: absolute;
         height: 8px;
         width: 55px;
@@ -125,4 +125,57 @@ header a{
         #menu-toggle:checked + .menu-button-container .menu-button::after {
         margin-top: 0px;
         transform: rotate(-405deg);
+        }
+        
+            /*pop-up menu*/
+    @media (max-width: 699px) {
+
+        .top-nav {
+            padding: 0px 50px;
+        }
+
+        .menu-button-container {
+            display: flex;
+        }
+        
+        .menu {
+            position: absolute;
+            top: 0;
+            margin-top: 75px;
+            left: 0;
+            flex-direction: column;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #menu-toggle ~ .menu li {
+            height: 0;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+        }
+        
+        #menu-toggle:checked ~ .menu li {
+            border: .75px solid var(--red1);
+            height: 3em;
+            padding: .5em;
+            transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+        }
+        
+        .menu > li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 1em 0;
+            width: 100%;
+            background-color: var(--red3);
+        }
+        
+        .menu > li a {
+            padding: 0 10rem;
+            display:block;
+        }
         }
