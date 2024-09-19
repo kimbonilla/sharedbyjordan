@@ -189,6 +189,13 @@ h1, h2, h3, h4, h5, h6{
     font-family: 'crimson-pro', serif;
 }
 
+h1 {
+    font-size: 56px;
+    font-weight: 800;
+    letter-spacing: .2px;
+    color: var(--red1);
+}
+
 h2 {
     font-size: 48px;
     font-weight: 800;
@@ -284,6 +291,8 @@ footer p a:link, footer li a{
     width: 40vw;
     max-width: 900px;
     padding: 50px;
+    display: flex;
+    align-items: center;
     background-color: var(--red2);
     color: var(--tan1);
     box-shadow: 0px 4px 4px rgb(0, 0, 0, 0.2);
@@ -316,7 +325,7 @@ footer p a:link, footer li a{
     width: 40vw;
     max-width: 900px;
     margin-bottom: 25px;
-    padding: 50px;
+    padding: 35px;
     background-color: var(--red2);
     color: var(--tan1);
     box-shadow: 0px 4px 4px rgb(0, 0, 0, 0.2);
@@ -328,7 +337,7 @@ footer p a:link, footer li a{
     width: 40vw;
     max-width: 900px;
     margin-top: 25px;
-    padding: 50px;
+    padding: 35px;
     background-color: var(--red2);
     color: var(--tan1);
     box-shadow: 0px 4px 4px rgb(0, 0, 0, 0.2);
@@ -336,6 +345,21 @@ footer p a:link, footer li a{
 
 /*inner pages*/
 .about-me-text {
+    min-height: 80vh;
     margin: 0 auto;
     max-width: 850px;
+}
+
+.portfolio-text {
+    min-height: 80vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.portfolio-text h1 {
+    background-color: var(--red2);
+    color: var(--tan1);
+    padding: 50px;
+    box-shadow: 0px 4px 4px rgb(0, 0, 0, 0.2);
 }
