@@ -26,10 +26,6 @@ html, body{
     text-wrap: pretty;
 }
 
-p, a {
-    font-size: 20px;
-}
-
 /*header*/
 header {
     background-color: var(--red3);
@@ -190,17 +186,25 @@ header a{
 
 /*headers*/
 h1, h2, h3, h4, h5, h6{
-    font-family: 'crimson-sans', serif;
+    font-family: 'crimson-pro', serif;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 800;
+    letter-spacing: .2px;
+    color: var(--red1);
+    text-align: center;
 }
 
 /*main text*/
 p, ul {
     font-family: 'karla', sans-serif;
     font-weight: 275;
-}
-
-ul {
-    padding-left: 20px;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: .1px;
+    
 }
 
 /*footer*/
@@ -328,4 +332,10 @@ footer p a:link, footer li a{
     background-color: var(--red2);
     color: var(--tan1);
     box-shadow: 0px 4px 4px rgb(0, 0, 0, 0.2);
+}
+
+/*inner pages*/
+.about-me-text {
+    margin: 0 auto;
+    max-width: 850px;
 }
