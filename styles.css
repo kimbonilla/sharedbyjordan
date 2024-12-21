@@ -353,10 +353,12 @@ footer a:hover{
 .about-me-text {
     min-height: 80vh;
     margin: 0 auto;
+    width: 90vw;
     max-width: 850px;
 }
 
 .portfolio-text {
+    margin: 0 20px;
     min-height: 80vh;
     display: flex;
     justify-content:center;
@@ -366,6 +368,7 @@ footer a:hover{
 .portfolio-text h1 {
     background-color: var(--red2);
     color: var(--tan1);
+    text-align: center;
     padding: 50px;
     box-shadow: 0px 4px 4px rgb(0, 0, 0, 0.2);
 }
