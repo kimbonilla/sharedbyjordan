@@ -280,7 +280,7 @@ footer a:hover{
     flex-wrap: wrap;
     column-gap: 100px;
     row-gap: 50px;
-    margin: 100px 50px;
+    margin: 50px 25px;
     justify-content: center;
 }
 
@@ -339,7 +339,7 @@ footer a:hover{
 @media (max-width: 1074px) { /* wrap breakpoint */
     .home-text > div {
         width: 100%; /* Full width when wrapped */
-        max-width: 100%;
+        max-width: 900px;
     }
 }
 
